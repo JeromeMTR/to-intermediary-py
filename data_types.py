@@ -52,3 +52,28 @@ print(true_bool == 1)
 
 false_bool = False
 print(false_bool == 0)
+
+#strings
+greeting = 'Hello, it\'s Jerome'
+
+# with double quotes, it does not require backslash
+greeting = "Hello, it's Jerome"
+
+
+# string formatting
+
+# a quick way to print multiple values with spaces
+print('November is month =', 11)
+
+#concatenation can be used with the + operator
+name = 'jerome'
+method_of_greeting = 'hi'
+
+greeting = method_of_greeting + name
+
+print(greeting)
+
+# F-string
+f_greeting = f"hellooooo, {name}"
+print(f_greeting)
+
