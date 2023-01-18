@@ -77,3 +77,14 @@ print(greeting)
 f_greeting = f"hellooooo, {name}"
 print(f_greeting)
 
+# lists
+names = ['jerome', 'lauryn', 'elias']
+
+#accessing elements
+print(names[0]) # prints jerome
+
+# return length of list
+print(len(names)) # prints 3
+
+#lists are mutable which mean can be changed
+names[0]
