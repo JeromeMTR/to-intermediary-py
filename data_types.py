@@ -27,3 +27,21 @@ dir(str)
 
 help(str.split())
 # shows documentation for particular type
+
+# 3 different types of numbers
+# int
+# float
+# complex
+
+# all integers
+x = 4
+y = -1234
+z = 0
+
+# all floats
+x = 5.0
+y = -3934.2
+z = 0.0
+
+# all complex numbers
+x = 42j
