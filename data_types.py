@@ -45,3 +45,10 @@ z = 0.0
 
 # all complex numbers
 x = 42j
+
+# boolean types
+true_bool = True
+print(true_bool == 1)
+
+false_bool = False
+print(false_bool == 0)
