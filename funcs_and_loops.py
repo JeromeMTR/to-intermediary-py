@@ -30,9 +30,48 @@ say_greetings('jerome', 'whats up', '!')
 def say_greeting(name, greeting):
     print(f"{greeting}, {name}.")
 
-say_greeting("Nina")
+# say_greeting("Nina")
 # Traceback (most recent call last):
 #   File "<stdin>", line 1, in <module>
 # TypeError: say_greeting() missing 1 required positional argument: 'greeting'
+
+# boolean logic
+
+def check_equality(x, y):
+    print(x == y)
+
+check_equality(1, 1) #prints true
+
+# with arrays it checks if the content is the same not the address
+check_equality([2], []) #prints false
+check_equality([1, 3, 5], [1, 3, 5]) # prints true
+
+# checks is the same object in memory
+def is_identical(x, y):
+    print('same object in memory?',x is y)
+
+letter = 'a'
+other_letter = 'a'
+
+array_1 = [1, 2, 4]
+
+is_identical(letter, other_letter) #prints true
+is_identical(array_1, [1, 2, 4]) #prints false
+is_identical(array_1, array_1) #prints true
+
+
+def is_not_identical(x, y):
+    print('is not the same object in memory?', x is not y)
+
+is_not_identical(letter, other_letter) #prints false
+is_not_identical(array_1, [1, 2, 4]) #prints true
+is_not_identical(array_1, array_1) #prints false
+
+
+
+
+
+
+
 
 
