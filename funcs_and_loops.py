@@ -68,10 +68,64 @@ is_not_identical(array_1, [1, 2, 4]) #prints true
 is_not_identical(array_1, array_1) #prints false
 
 
+# loops
+# combines in keyword and for keyword can be used to indicate loping over each item in a sequence
+
+colors = ['red', 'yellow', 'green']
+
+for color in colors:
+    print(f"the current color is {color}")
+
+# prints the current color is red
+# prints the current color is yellow
+# prints the current color is green
 
 
+# looping over range of numbers
+# you can use the builtin function range()
+
+for num in range(5):
+    print(num)
+
+# prints 0
+# prints 1
+# prints 2
+# prints 3
+# prints 4
+
+# what if we wanted 2 through 4
+for num in range(2, 5):
+    print(num)
+
+# prints 2
+# prints 3
+# prints 4
+
+# what if we wanted both the index and the val
+# use enumerate to turn it in to a tuple and unpackage it
+
+for index, color in enumerate(colors):
+    print(f"the index is {index}, and the color is {color}")
+
+# prints the index is 0, and the color is red
+# prints the index is 1, and the color is yellow
+# prints the index is 2, and the color is green
+
+# what would be the time complexity of enumerate and a for loop????
 
 
+# looping over dictionaries
+nums = {
+    'one': 111,
+    'two': 222,
+}
 
+for key in nums:
+    print(f'the current key is {key}')
 
+# prints the current key is one
+# prints the current key is two
 
+# when looping to get the val and key, use dict.items()
+for key, value in nums.items():
+    print(f'the current key is {key}, and the value is {value}')
