@@ -16,5 +16,8 @@ list_comprehension = [len(name) for name in names]
 
 print(list_comprehension) # prints [6, 6, 5]
 
+# you can also add conditional at the end
 
+conditional_comprehension = [name for name in names if len(name) % 2 == 0]
 
+print(conditional_comprehension) # prints ['jerome', 'lauryn']
