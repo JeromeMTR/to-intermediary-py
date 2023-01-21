@@ -21,3 +21,23 @@ print(list_comprehension) # prints [6, 6, 5]
 conditional_comprehension = [name for name in names if len(name) % 2 == 0]
 
 print(conditional_comprehension) # prints ['jerome', 'lauryn']
+
+# dictionary comprehension
+
+squares = {num: num ** 2 for num in range(4)}
+
+print(squares) #prints {0: 0, 1: 1, 2: 4, 3: 9}
+
+# generator expression ()
+# once looped through than the generator can not be looped anymore
+
+gen_expression = (num for num in range(2))
+
+print(gen_expression) # shows that it's a generator
+
+for num in gen_expression:
+    print(num) # prints current num
+
+# now gen expression can not be used anymore
+for num in gen_expression:
+    print(num) # prints nothing
